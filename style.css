@@ -1,0 +1,1086 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pesto', Arial, sans-serif;
+    background: white;
+    color: #71490C;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+.highlight {
+    color: #FF6A00;
+}
+
+/* ========================================
+   Header & Navigation
+   ======================================== */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 32px;
+    background: white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 227px;
+    height: 65px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.main-nav a {
+    color: #71490C;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #FF6A00;
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-main-image {
+    max-width: 879px;
+    margin: 0 auto 40px;
+    border-radius: 10px;
+}
+
+.hero-float-1,
+.hero-float-2,
+.hero-float-3,
+.hero-float-4,
+.hero-float-5 {
+    position: absolute;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.hero-float-1 {
+    top: 280px;
+    right: 100px;
+    max-width: 434px;
+    transform: rotate(26deg);
+    
+}
+
+.hero-float-2 {
+    top: 400px;
+    left: 200px;
+    max-width: 364px;
+}
+
+.hero-float-3 {
+    bottom: 100px;
+    right: 50px;
+    max-width: 127px;
+}
+
+.hero-float-4 {
+    bottom: 50px;
+    right: 200px;
+    max-width: 63px;
+}
+
+.hero-float-5 {
+    bottom: 80px;
+    right: 120px;
+    max-width: 64px;
+}
+
+.hero-title {
+    color: #FF6A00;
+    font-size: clamp(120px, 15vw, 300px);
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+    text-shadow: 9px 4px 4px rgba(0, 0, 0, 1);
+    margin: 40px 0 20px;
+    position: absolute;
+    top: 500px;
+    right: 100px;
+
+}
+
+.hero-subtitle {
+    color: #FF6A00;
+    font-size: clamp(100px, 12vw, 300px);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 15px 4px rgba(0, 0, 0, 1);
+    margin: 20px 0;
+    position: absolute;
+    top: 370px;
+    right: 90px;
+
+}
+
+.hero-text {
+    color: #FF6A00;
+    font-size: clamp(32px, 4vw, 83px);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 9px 6px rgba(0, 0, 0, 1);
+    margin: 40px auto;
+    max-width: 1066px;
+}
+
+/* ========================================
+   Section Styles
+   ======================================== */
+section {
+    padding: 80px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: clamp(48px, 6vw, 128px);
+    font-style: italic;
+    font-weight: 700;
+    color: #71490C;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-title.centered {
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: clamp(40px, 5vw, 100px);
+    font-style: italic;
+    font-weight: 700;
+    color: #71490C;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* ========================================
+   Culture Section
+   ======================================== */
+.culture-section {
+    background: linear-gradient(to bottom, white 0%, #f5f5f5 100%);
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.culture-card {
+    background: rgba(113, 73, 12, 0.5);
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.culture-card img {
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.culture-card h4 {
+    color: #FF6A00;
+    font-size: 58px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.culture-note {
+    text-align: center;
+    color: #71490C;
+    font-size: clamp(24px, 3vw, 48px);
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 60px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   History Section
+   ======================================== */
+.history-section {
+    background: #fafafa;
+}
+
+.preservation-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.method-card {
+    background: #FF6A00;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 40px 30px;
+    position: relative;
+}
+
+.region-title {
+    color: white;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.method-name {
+    color: #71490C;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.method-description {
+    color: white;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.5;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================
+   Knowledge Section
+   ======================================== */
+.knowledge-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
+}
+
+.knowledge-stat {
+    color: #71490C;
+    font-size: clamp(40px, 4vw, 80px);
+    font-style: italic;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+.knowledge-value {
+    color: #71490C;
+    font-size: clamp(48px, 5vw, 96px);
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+/* ========================================
+   Regional Info Section
+   ======================================== */
+.regional-info {
+    position: relative;
+    padding: 120px 20px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+}
+
+.title-main {
+            width: 1048px; left: 221px; top: 2233px; position: absolute; text-align: center; color: #71490C; font-size: 128px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .did-you-know {
+            width: 998px; left: 221px; top: 4484px; position: absolute; text-align: center; color: #FF6A00; font-size: 200px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word;
+        }
+        .economic-title {
+            width: 1468px; left: 0px; top: 4691px; position: absolute; text-align: center;
+        }
+        .economic-value {
+            width: 1295px; left: 200px; top: 4788px; position: absolute; text-align: center; color: #71490C; font-size: 96px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word;
+        }
+
+        /* --- กล่องข้อมูล 4 ภาค --- */
+        .region-box-north {
+            width: 346px; height: 308px; left: 29px; top: 2494px; position: absolute; background: #FF6A00; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 20px; border: 1px black solid;
+        }
+        .region-title-north {
+            left: 79px; top: 2506px; position: absolute; color: white; font-size: 96px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word;
+        }
+        .region-desc-north {
+            width: 340px; left: 68px; top: 2602px; position: absolute;
+        }
+
+        .region-box-northeast {
+            width: 353px; height: 347px; left: 1070px; top: 2617px; position: absolute; background: #FF6A00; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 20px; border: 1px black solid;
+        }
+        .region-title-northeast {
+            left: 1119px; top: 2643px; position: absolute; color: white; font-size: 96px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word;
+        }
+        .region-desc-northeast {
+            width: 340px; left: 1091px; top: 2735px; position: absolute;
+        }
+
+        .region-box-central {
+            width: 364px; height: 330px; left: 39px; top: 3379px; position: absolute; background: #FF6A00; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 20px; border: 1px black solid;
+        }
+        .region-title-central {
+            left: 101px; top: 3397px; position: absolute; color: white; font-size: 96px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word;
+        }
+        .region-desc-central {
+            width: 326px; left: 70px; top: 3498px; position: absolute;
+        }
+
+        .region-box-south {
+            width: 371px; height: 317px; left: 758px; top: 3798px; position: absolute; background: #FF6A00; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 20px; border: 1px black solid;
+        }
+        .region-title-south {
+            left: 844px; top: 3824px; position: absolute; color: white; font-size: 96px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word;
+        }
+        .region-desc-south {
+            width: 348px; left: 786px; top: 3897px; position: absolute;
+        }
+
+
+        /* --- กล่องสีเทาด้านบน (Placeholder?) --- */
+        .placeholder-box-1 {
+            width: 263px; height: 348px; left: 81px; top: 1598px; position: absolute; background: rgba(113, 73, 12, 0.50); border: 1px black solid;
+        }
+        .placeholder-box-2 {
+            width: 263px; height: 348px; left: 419px; top: 1598px; position: absolute; background: rgba(113, 73, 12, 0.50); border: 1px black solid;
+        }
+        .placeholder-box-3 {
+            width: 263px; height: 348px; left: 757px; top: 1598px; position: absolute; background: rgba(113, 73, 12, 0.50); border: 1px black solid;
+        }
+        .placeholder-box-4 {
+            width: 263px; height: 348px; left: 1095px; top: 1598px; position: absolute; background: rgba(113, 73, 12, 0.50); border: 1px black solid;
+        }
+
+        /* --- สไตล์สำหรับข้อความย่อย (ใช้ซ้ำ) --- */
+        /* * หมายเหตุ: ในโค้ดต้นฉบับมีการกำหนดสไตล์ฟอนต์ซ้ำๆ ในทุก element
+         * แต่เพื่อให้อ่านง่าย เราสามารถกำหนดสไตล์ร่วมได้
+         * อย่างไรก็ตาม เพื่อให้ "เหมือนเดิมเป๊ะๆ" ตามที่ขอ
+         * โค้ดด้านบนจึงคัดลอกสไตล์มาทั้งหมด
+         * ส่วน span ด้านล่างนี้เป็นส่วนที่อยู่ใน div อยู่แล้ว
+         */
+        .text-brown { color: #71490C; font-size: 64px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        .text-white { color: white; font-size: 36px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        .text-white-small { color: white; font-size: 36px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word; }
+        .text-title-brown { color: #71490C; font-size: 80px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word; }
+        .text-title-orange { color: #FF6A00; font-size: 80px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word; }
+        .text-title-dark { color: #33363F; font-size: 80px; font-family: Pesto; font-style: italic; font-weight: 700; word-wrap: break-word; }
+
+.info-box {
+    background: #E95A0C;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.info-box h3 {
+    color: #71490C;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: white;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.regional-title {
+    color: #FF6A00;
+    font-size: clamp(48px, 5vw, 96px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+.regional-subtitle {
+    color: #71490C;
+    font-size: clamp(32px, 4vw, 64px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.regional-description {
+    color: #71490C;
+    font-size: clamp(28px, 3.5vw, 61px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: justify;
+    line-height: 68px;
+    letter-spacing: 1.22px;
+    max-width: 1158px;
+    margin: 40px auto;
+}
+
+/* ========================================
+   Protein Section
+   ======================================== */
+.protein-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.protein-content {
+    background: rgba(113, 73, 12, 0.5);
+    border: 3px solid white;
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 1280px;
+}
+
+.protein-image {
+    width: 100%;
+    max-width: 1141px;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+
+.protein-description {
+    color: #71490C;
+    font-size: clamp(48px, 5vw, 96px);
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.protein-subtitle {
+    color: #FF6A00;
+    font-size: clamp(80px, 10vw, 200px);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 60px 0;
+}
+
+.protein-highlight {
+    color: #FF6A00;
+}
+
+/* ========================================
+   Water Section
+   ======================================== */
+.water-section {
+    background: #fafafa;
+    padding: 100px 20px;
+}
+
+.water-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin: 60px 0;
+}
+
+.water-image {
+    width: 100%;
+    background: rgba(113, 73, 12, 0.5);
+    border: 3px solid white;
+    padding: 20px;
+}
+
+.water-text h4 {
+    color: #71490C;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.water-description {
+    color: #71490C;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+    margin-bottom: 40px;
+}
+
+.water-text h5 {
+    color: #FF6A00;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.water-note {
+    color: #71490C;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+}
+
+.water-final {
+    color: #71490C;
+    font-size: clamp(28px, 3.5vw, 61px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: justify;
+    line-height: 68px;
+    letter-spacing: 1.22px;
+    max-width: 1158px;
+    margin: 60px auto 0;
+}
+
+/* ========================================
+   Process Section
+   ======================================== */
+.process-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.process-question {
+    color: #71490C;
+    font-size: clamp(60px, 8vw, 150px);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 60px;
+}
+
+.process-image {
+    max-width: 515px;
+    margin: 0 auto 40px;
+}
+
+.process-intro {
+    color: #71490C;
+    font-size: clamp(60px, 8vw, 128px);
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 40px 0;
+}
+
+.process-intro .highlight {
+    font-size: clamp(100px, 12vw, 250px);
+    font-style: italic;
+}
+
+.process-description {
+    color: #71490C;
+    font-size: clamp(100px, 15vw, 700px);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 60px 0;
+}
+
+.process-cta {
+    color: #71490C;
+    font-size: clamp(60px, 8vw, 150px);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================
+   Making Section (Timeline)
+   ======================================== */
+.making-section {
+    background: #fafafa;
+    padding: 100px 20px;
+}
+
+.making-title {
+    color: #FF6A00;
+    font-size: clamp(60px, 8vw, 150px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+}
+
+.making-subtitle {
+    color: #71490C;
+    font-size: clamp(48px, 6vw, 96px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 80px;
+}
+
+.process-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 27px;
+    top: 0;
+    bottom: 0;
+    width: 7px;
+    background: black;
+}
+
+.timeline-step {
+    position: relative;
+    padding: 30px 0 30px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.step-circle {
+    position: absolute;
+    left: 0;
+    width: 53px;
+    height: 53px;
+    background: #FF6A00;
+    border-radius: 50%;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.timeline-step h4 {
+    color: #71490C;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================
+   Menu Section
+   ======================================== */
+.menu-section {
+    padding: 100px 20px;
+}
+
+.menu-title {
+    color: #E95A0C;
+    font-size: clamp(100px, 12vw, 228px);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menu-intro {
+    color: #71490C;
+    font-size: clamp(48px, 5vw, 100px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.menu-note {
+    color: #71490C;
+    font-size: clamp(32px, 3vw, 60px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0.5;
+    margin: 40px 0 60px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    background: rgba(113, 73, 12, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.menu-item h4 {
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* ========================================
+   Dish Types Section
+   ======================================== */
+.dish-types {
+    background: #fafafa;
+    padding: 100px 20px;
+}
+
+.dish-title {
+    color: #71490C;
+    font-size: clamp(48px, 5vw, 96px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.dish-quote {
+    text-align: center;
+    font-size: clamp(36px, 4vw, 78px);
+    font-style: italic;
+    font-weight: 700;
+    color: #71490C;
+    margin: 60px auto;
+    max-width: 900px;
+}
+
+.dish-quote .highlight {
+    font-size: clamp(48px, 5vw, 100px);
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.dish-card {
+    background: rgba(113, 73, 12, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dish-card:hover {
+    transform: scale(1.05);
+}
+
+.dish-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.dish-card h4 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 15px;
+}
+
+/* ========================================
+   Fish Types Section
+   ======================================== */
+.fish-types {
+    padding: 100px 20px;
+}
+
+.fish-subtitle {
+    color: #FF6A00;
+    font-size: clamp(80px, 10vw, 188px);
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 60px 0;
+}
+
+.fish-images {
+    position: relative;
+    max-width: 533px;
+    margin: 80px auto;
+}
+
+.fish-main {
+    width: 100%;
+    border-radius: 550px;
+}
+
+.fish-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.fish-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin: 80px 0;
+}
+
+.fish-card {
+    text-align: center;
+}
+
+.fish-card img {
+    width: 100%;
+    height: 388px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.fish-card h4 {
+    color: #71490C;
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.fish-question {
+    color: #71490C;
+    font-size: clamp(32px, 3vw, 60px);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Future Section
+   ======================================== */
+.future-section {
+    background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.future-question {
+    color: #71490C;
+    font-size: clamp(60px, 8vw, 128px);
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+}
+
+.future-title {
+    color: #71490C;
+    font-size: clamp(120px, 15vw, 300px);
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 40px 0;
+}
+
+.future-subtitle {
+    color: #FF6A00;
+    font-size: clamp(60px, 8vw, 128px);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 30px 0;
+}
+
+.future-cta {
+    color: #71490C;
+    font-size: clamp(60px, 8vw, 128px);
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 40px 0;
+}
+
+.future-description {
+    color: #FF6A00;
+    font-size: clamp(48px, 5vw, 96px);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 30px 0;
+}
+
+.future-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+
+.future-images img {
+    max-width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(var(--rotation, 0deg));
+}
+
+.future-images img:nth-child(1) {
+    --rotation: 40deg;
+}
+
+.future-images img:nth-child(2) {
+    --rotation: 28deg;
+}
+
+.future-images img:nth-child(3) {
+    --rotation: 40deg;
+}
+
+.game-button {
+    background: #D9D9D9;
+    padding: 40px;
+    max-width: 600px;
+    margin: 60px auto;
+    border-radius: 10px;
+}
+
+.game-button p {
+    color: #FF6A00;
+    font-size: clamp(80px, 10vw, 220px);
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+.main-footer {
+    background: #71490C;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 24px;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 1024px) {
+    .main-nav {
+        gap: 20px;
+    }
+    
+    .main-nav a {
+        font-size: 24px;
+    }
+    
+    .water-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .preservation-methods {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero-float-1,
+    .hero-float-2,
+    .hero-float-3,
+    .hero-float-4,
+    .hero-float-5 {
+        display: none;
+    }
+    
+    section {
+        padding: 60px 15px;
+    }
+    
+    .culture-grid,
+    .menu-grid,
+    .dish-grid,
+    .fish-comparison {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-step {
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+    
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .main-nav a {
+        font-size: 18px;
+    }
+}
