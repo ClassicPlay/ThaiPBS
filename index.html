@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="th">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บ้านนอกแกลม - ปลาร้าไทยออริจินัล</title>
-    <link rel="stylesheet" href="style.css">
+    <title>เมื่อก่อนบอกเหม็น - หนึ่งไหร้อยรสชาติ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Header Navigation -->
+    <header class="main-header" id="header">
+        <img src="images\logo-it-new.webp" alt="Logo" class="logo">
+        <nav class="main-nav">
+            <a href="#hero">หน้าแรก</a>
+            <a href="#culture">วัฒนธรรม</a>
+            <a href="#menu">เมนู</a>
+            <a href="#game">เกม</a>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <img src="https://i.postimg.cc/4dJMBZTN/hi.png" alt="ปลาร้า" class="hero-main-image">
-        <img src="https://i.postimg.cc/3JqJ0fQn/Fish.png" alt="ปลา" class="hero-float-1">
-        <img src="https://i.postimg.cc/zX23SXK0/Fish2.png" alt="ปลา" class="hero-float-2">
+    <section class="hero" id="hero">
+        <img src="images/fishRigtMainpage.PNG" alt="ปลา" class="hero-float-1">
+        <img src="images/plaEangLeft.PNG" alt="ปลา" class="hero-float-2">
+        <img src="images/plaEnagRigt.PNG" alt="ปลาเล็ก" class="hero-float-3">
+        <img src="images/fishLeftMainpage.PNG" alt="ปลาเล็ก" class="hero-float-4">
+        <img src="images/fishLeftMainpage.PNG" alt="ปลาเล็ก" class="hero-float-5">
+        <img src="images\hai.png" alt="ปลาร้า" class="hero-main-image">
 
-        <h1 class="hero-subtitle">ไหเดียว</h1>
-        <h1 class="hero-title">ร้อยรสชาติ</h1>
-        
-        <img src="https://i.postimg.cc/4dJMBZTN/hi.png" alt="ปลาเล็ก" class="hero-float-3">
-        <img src="https://i.postimg.cc/4dJMBZTN/hi.png" alt="ปลาเล็ก" class="hero-float-4">
-        <img src="https://i.postimg.cc/4dJMBZTN/hi.png" alt="ปลาเล็ก" class="hero-float-5">
-        
-
+        <h1 class="hero-title">ไหเดียว</h1>
+        <h2 class="hero-subtitle">ร้อยรสชาติ</h2>
         <p class="hero-text">เมื่อก่อนบอกเหม็น … วันนี้เรียกกลิ่นออริจินัล</p>
     </section>
 
+
     <!-- Culture Section -->
-    <section class="culture-section">
-        <h2 class="section-title">ภูมิปัญญาที่ไม่เคยหมดอายุ</h2> <!--เปลี่ยนสีน้ำตาล-->
-        <h3 class="section-subtitle">ศิลปะแห่งการถนอมอาหาร</h3><!--เปลี่ยนสีส้ม-->
+    <section class="culture-section fade-in" id="culture">
+        <h2 class="section-title">ภูมิปัญญาที่ไม่เคยหมดอายุ</h2>
+        <h3 class="section-subtitle">ศิลปะแห่งการถนอมอาหาร</h3>
         
         <div class="culture-grid">
             <div class="culture-card">
-                <img src="https://placehold.co/229x272" alt="นอร์เวย์">
+                <img src="images/norwayFood.png" alt="นอร์เวย์">
                 <h4>นอร์เวย์</h4>
+                <p class="culture-card-desc">ปลาเทราต์หมักเกลือและน้ำในภาชนะปิด กลิ่นแรงขึ้นตามระยะสุกงอม
+                     มีกลิ่นจากไฮโดรเจนซัลไฟด์และกรดอินทรีย์ต่าง ๆ </p>
             </div>
             <div class="culture-card">
-                <img src="https://placehold.co/238x272" alt="รัสเซีย">
+                <img src="images/rassiaFood.png" alt="รัสเซีย">
                 <h4>รัสเซีย</h4>
+                <p class="culture-card-desc">ในรัสเซียและแถบสลาฟเหนือมีขนบปลาหมักและดองหลายแบบ 
+                    มีการถนอมปลาด้วยเกลือและการหมักที่ให้กลิ่นแรงเป็นเอกลักษณ์ในภูมิภาคหนาว </p>
             </div>
             <div class="culture-card">
-                <img src="https://placehold.co/238x272" alt="สวีเดน">
+                <img src="images/sweedenFood.png" alt="สวีเดน">
                 <h4>สวีเดน</h4>
+                <p class="culture-card-desc">ปลาเฮร์ริงหมักเกลืออ่อนอย่างน้อย 6 เดือนจนเกิดแก๊สในกระป๋องและกลิ่นฉุนจัด 
+                    เป็นที่ยอมรับว่าเป็นหนึ่งในอาหารที่กลิ่นแรงมากของโลก </p>
+                
             </div>
             <div class="culture-card">
-                <img src="https://placehold.co/237x272" alt="อิตาลี">
+                <img src="images/italyFood.png" alt="อิตาลี">
                 <h4>อิตาลี</h4>
+                <p class="culture-card-desc">เป็นซอสที่ได้จากการหมักปลาแอนโชวี่ในถังไม้จนของเหลวไหลออกมา กลิ่นรสเข้มข้นและชัดมาก </p>
             </div>
         </div>
         
@@ -54,176 +70,334 @@
             มีแต่ 'ศาสตร์แห่งการถนอมอาหาร' ที่มนุษย์ทุกทวีปใช้เพื่อความอยู่รอดมานับพันปี!
         </p>
     </section>
-      <!-- Regional Information -->
-    <section class="regional-info">
-        <img src="https://i.postimg.cc/50gRYrGZ/phaenth-thiy.png" alt="แผนที่ประเทศไทย" class="map-image">
-        <div class="region-overlay north" data-region="north"></div>
-        <div class="region-overlay northeast" data-region="northeast"></div>
-        <div class="region-overlay central" data-region="central"></div>
-        <div class="region-overlay south" data-region="south"></div>
-
-       <div class="title-main">ประเทศไทยมีการถนอมอาหารเกี่ยวกับปลามาอย่างยาวนาน</div>
-    <img style="width: 3048px; height: 1715px; left: -804px; top: 2589px; position: absolute; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)" src="https://i.postimg.cc/50gRYrGZ/phaenth-thiy.png" />
-
-    <div class="region-box-north"></div>
-    <div class="region-title-north">ภาคเหนือ</div>
-    <div class="region-desc-north">
-        <span class="text-brown"> ปลาแห้ง</span>
-        <span class="text-white-small">  : นำปลามา<br/>ขอดเกล็ด  ควักไส้แล้วผ่าซีก<br/>ก่อนจะนำไปหมักกับ<br/>เครื่องปรุงรสและตากแดด <br/>1-2 วัน </span>
-    </div>
-    
-    <div class="region-box-northeast"></div>
-    <div class="region-title-northeast">ภาคอีสาน</div>
-    <div class="region-desc-northeast">
-        <span class="text-white-small">  </span>
-        <span class="text-brown">ปลาร้า</span>
-        <span class="text-white-small"> : นำปลามาทำ<br/>ความสะอาด หมักเกลือ 1 สัปดาห์ จากนั้นเติมข้าวคั่วคลุกเคล้า ปิดฝาด้วยตาข่าย ใส่น้ำให้ท่วมกัน<br/>แมลง แล้วหมักต่ออย่างน้อย 3 เดือน ถึง 1 ปี</span>
-    </div>
-
-    <div class="region-box-central"></div>
-    <div class="region-title-central">ภาคกลาง</div>
-    <div class="region-desc-central">
-        <span class="text-white-small">   </span>
-        <span class="text-brown">ปลาดู </span>
-        <span class="text-white-small">: ล้างปลา <br/>คลุกเกลือ แช่แข็ง 1 คืนล้างซ้ำ พักให้สะเด็ดน้ำ คลุกกระเทียม พริกไทย ข้าวคั่ว ปิดฝา หมักไว้ <br/>1 สัปดาห์ (ไม่ต้องแช่เย็น)</span>
-    </div>
-
-    <div class="region-box-south"></div>
-    <div class="region-title-south">ภาคใต้</div>
-    <div class="region-desc-south">
-        <span class="text-brown"> บูดู </span>
-        <span class="text-white">: ล้างปลาทะเลคลุกเกลือ (อัตราส่วน 2-3:1) อัดใส่ภาชนะ<br/>ปิดสนิท หมักทิ้งไว้ 8-15 เดือน (หรือตากแดด) จากนั้นจึงแยก<br/>น้ำบูดู (ใสและข้น) </span>
-    </div>
     <!-- Fish Preservation History -->
-    <body>
-    <div class="did-you-know">คุณรู้หรือไม่ว่า?</div>
-    <div cl ass="economic-title">
-        <span class="text-title-brown">มูลค่าเชิงเศรษฐกิจของการ </span>
-        <span class="text-title-orange">“ทำปลาร้า”</span>
-        <span class="text-title-dark"> </span>
-        <span class="text-title-brown">ในประเทศไทย</span>
-    </div>
-    <div class="economic-value"> สร้างมูลค่าสูงถึง 800 ล้านบาทต่อปี</div>
-    
+    <section class="history-section fade-in">
+        <h2 class="section-title centered">ประเทศไทยมีการถนอมอาหารเกี่ยวกับปลามาอย่างยาวนาน</h2>
 
-</body>
-</html>
-
-  
-
-        </div>
-        <div class="info-box nongkhai">
-            <h3>จังหวัดนครพนม</h3>
-            <p>10.1 ล้านบาท/ปี<br>มีโรงงานปลาร้า</p>
-        </div>
-
-        <h2 class="regional-title">ปลาร้า<span Class = "Food">เป็นวัฒนธรรมการถนอมอาหารที่เก่าแก่</span></h2>
-        <p class="regional-subtitle">เกิดจากความจำเป็นของชาวอีสาน<br>ในการเก็บรักษาปลา ฤดูน้ำหลาก</p>
-        <p class="regional-description">เมื่อปลามีมากมาย<br>ในการเก็บรักษาปลาฤดูน้ำหลาก<br>และเป็นการถนอมอาหารที่เก่าแก่เกิดจากความจำเป็นของชาวอีสาน<br>ในการเก็บรักษาปลา ฤดูน้ำหลาก</p>
-    </section>
-
-    <!-- Protein Section -->
-    <section class="protein-section">
-        <h2 class="section-title">ทำไม "ปลาร้า"</h2><!--เปลี่ยนสีส้ม-->
-        <div class="protein-content">
-            <img src="https://placehold.co/1141x713" alt="ปลาร้า" class="protein-image">
-            <p class="protein-description">ถึงมีความนิยมมากขึ้น</p>
-        </div>
-    </section>
-
-    <!-- Water Source Section -->
-    <section class="water-section">
-        <h2 class="section-title">เมื่อสายน้ำคือแหล่ง</h2>
-        <h3 class="section-subtitle protein-highlight">โปรตีน</h3>
-        
-        <div class="water-content">
-            <img src="https://placehold.co/659x529" alt="ชาวบ้านตกปลา" class="water-image">
-            
-            <div class="water-text">
-                <h4>สาเหตุการทำปลาร้า</h4>
-                <p class="water-description">
-                    คนอีสานดำรงชีพแบบพึ่งพา<br>
-                    ทรัพยากรธรรมชาติที่ดินแม่น้ำ<br>
-                    และป่าไม้ที่มีความอุดมสมบูรณ์<br>
-                    และสร้างความหลากหลายให้กับ<br>
-                    ระบบนิเวศสามารถ
+        <section class="center-frame" aria-labelledby="plara-feature">
+            <div>
+                <h3 id="plara-feature" class="feature-title"><span class="highlight">วัฒนธรรมปลาร้า</span></h3>
+                <p class="feature-text">
+                    ที่มีความสำคัญด้านวัฒนธรรมอาหารที่สะท้อนถึงภูมิปัญญาและเชื่อมโยงมิติด้านอื่น ๆ ในสังคมอีสาน
+                    จากหลักฐานโบราณคดีมีการค้นพบร่องรอยของกระดูกปลาช่อน และปลาดุก บรรจุอยู่ในภาชนะดินเผาก้นกลม
+                    จากแหล่งโบราณคดีโนนวัด อำเภอโนนสูง จังหวัดนครราชสีมา คาดว่ามีอายุราว 2,100 – 2,500 ปี (ยุคเหล็ก)
+                    ประกอบกับภาคอีสานนี้มีพัฒนาการทางวัฒนธรรมจากแหล่งทรัพยากรที่สำคัญหลายประเภท เช่น มีการทำเหล็กจากแหล่งแร่
+                    การมีดินเหมาะแก่การปั้นภาชนะดินเผา อีกทั้งมีการต้มเกลือสินเธาว์ใช้กันอย่างกว้างขวาง จึงเชื่อว่ามีการหมักปลาร้า
+                    ในภาคอีสานตั้งแต่สมัยก่อนประวัติศาสตร์
                 </p>
-                
-                <h5>"ทำมาหากิน"</h5>
-                <p class="water-note">
-                    ตามฤดูกาลอย่างหลากหลาย<br>
-                    เรียนรู้และประยุกต์การดำรงชีพ<br>
-                    เพื่อความอยู่รอดมาตั้งแต่รุ่นเก่า
+            </div>
+        </section>
+        
+        
+        <div class="history-container">
+
+            <div class="history-map">
+                <div class="map-wrapper">
+                    <img src="https://i.postimg.cc/ryBNbc7j/kh-nr-c-k-th-m-pe-ns-wn-phsm-him-5.png" alt="แผนที่การถนอมอาหารปลาในไทย">
+
+                    <!-- Overlay region pins (labels) -->
+                    <button class="region-pin north" data-region="north" aria-label="ภาคเหนือ">ภาคเหนือ</button>
+                    <button class="region-pin northeast" data-region="northeast" aria-label="ภาคอีสาน">ภาคอีสาน</button>
+                    <button class="region-pin central" data-region="central" aria-label="ภาคกลาง">ภาคกลาง</button>
+                    <button class="region-pin south" data-region="south" aria-label="ภาคใต้">ภาคใต้</button>
+                </div>
+            </div>
+
+            <div class="preservation-methods">
+            <div class="method-card north">
+                <h3 class="region-title">ภาคเหนือ</h3>
+                <h4 class="method-name">ปลาแห้ง</h4>
+                <p class="method-description">
+                    นำปลามาขอดเกล็ด คว้านไส้แล้วผ่าซีก ก่อนจะนำไปหมักกับเครื่องปรุงรสและตากแดด 1-2 วัน
+                </p>
+            </div>
+
+            <div class="method-card central">
+                <h3 class="region-title">ภาคกลาง</h3>
+                <h4 class="method-name">ปลาดู</h4>
+                <p class="method-description">
+                    ล้างปลา คลุกเกลือ แช่แข็ง 1 คืนล้างซ้ำ พักให้สะเด็ดน้ำ คลุกกระเทียม พริกไทย ข้าวคั่ว ปิดฝา หมักไว้ 1 สัปดาห์
+                </p>
+            </div>
+
+            <div class="method-card northeast">
+                <h3 class="region-title">ภาคอีสาน</h3>
+                <h4 class="method-name">ปลาร้า</h4>
+                <p class="method-description">
+                    นำปลามาทำความสะอาด หมักเกลือ 1 สัปดาห์ จากนั้นเติมข้าวคั่วคลุกเคล้า ปิดฝาด้วยตาข่าย ใส่น้ำให้ท่วม แล้วหมักต่ออย่างน้อย 3 เดือน ถึง 1 ปี
+                </p>
+            </div>
+
+            <div class="method-card south">
+                <h3 class="region-title">ภาคใต้</h3>
+                <h4 class="method-name">บูดู</h4>
+                <p class="method-description">
+                    ล้างปลาทะเล คลุกเกลือ (อัตราส่วน 2-3:1) อัดใส่ภาชนะ ปิดสนิท หมักทิ้งไว้ 8-15 เดือน จากนั้นจึงแยกน้ำบูดู
                 </p>
             </div>
         </div>
+    </section>
+
+    <!-- Knowledge Section -->
+    <section class="knowledge-section fade-in">
+        <h2 class="section-title centered">คุณรู้หรือไม่ว่า?</h2>
+        <p class="knowledge-stat">มูลค่าเชิงเศรษฐกิจของการ <span class="highlight">"ทำปลาร้า"</span> ในประเทศไทย</p>
+        <p class="knowledge-value">สร้างมูลค่าสูงถึง 800 ล้านบาทต่อปี</p>
+    </section>
+
+     <!-- Isaan Section (inserted after Thailand map) -->
+    <section class="isaan-section fade-in" id="isaan-section">
+        <h2 class="section-title centered">ข้อมูลเศรษฐกิจรายได้จากการขายปลาร้าของภาคอีสาน</h2>
+        <p class="section-subtitle centered">คลิกที่จังหวัดเพื่อดูมูลค่ารายได้ (ล้านบาท)</p>
+
+        <div class="isaan-map-wrapper">
+            <img src="https://i.postimg.cc/mDDnp8xb/kh-nr-c-k-th-m-pe-ns-wn-phsm-him.png" alt="แผนที่ภาคอีสาน" class="isaan-map">
+
+            <!-- province pins (approx positions) -->
+            <button class="province-pin kalasin" data-prov="กาฬสินธุ์" data-revenue="801.4" aria-label="กาฬสินธุ์">กาฬสินธุ์</button>
+            <button class="province-pin loei" data-prov="เลย" data-revenue="262.8" aria-label="เลย">เลย</button>
+            <button class="province-pin maha" data-prov="มหาสารคาม" data-revenue="116.0" aria-label="มหาสารคาม">มหาสารคาม</button>
+            <button class="province-pin roiet" data-prov="ร้อยเอ็ด" data-revenue="50.2" aria-label="ร้อยเอ็ด">ร้อยเอ็ด</button>
+            <button class="province-pin khonkaen" data-prov="ขอนแก่น" data-revenue="22.9" aria-label="ขอนแก่น">ขอนแก่น</button>
+            <button class="province-pin ubon" data-prov="อุบลราชธานี" data-revenue="1.6" aria-label="อุบลราชธานี">อุบลราชธานี</button>
+            <button class="province-pin nongkhai" data-prov="หนองคาย" data-revenue="1.3" aria-label="หนองคาย">หนองคาย</button>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+<section class="video-section fade-in" id="video-section">
+    <h2 class="section-title centered">ทำไมปลาร้าถึงมีความนิยมมากขึ้น</h2>
+    <div class="center-frame" aria-labelledby="plara-identity-2">
+        <div>
+            <h3 id="plara-identity-2" class="feature-title">อัตลักษณ์และความเป็นมาของวัฒนธรรมปลาร้า</h3>
+            <p class="feature-text">
+                โดยใช้กรณีศึกษาจากกลุ่มปลาร้าหมักแม่บ้านเกษตรกรบ้านหนองล่าม อำเภอเชียงยืน จังหวัดมหาสารคาม
+                เนื่องจากมีเอกลักษณ์การหมักปลาร้าที่สืบทอดมาจากบรรพบุรุษจากรุ่นสู่รุ่น มีกรรมวิธีที่สะอาด ถูกหลักอนามัย
+                และมีความน่าเชื่อถือ เนื่องจากผู้นำของกลุ่มเป็นอาสาสมัครสาธารณสุขประจำหมู่บ้าน ซึ่งมีบทบาทสำคัญ
+                ในการเป็นผู้นำการเปลี่ยนแปลงด้านพฤติกรรมสุขภาพอนามัย 
+            </p>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video controls controlsList="nodownload">
+                <source src="video/whynot.mp4" type="video/mp4">
+                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+            </video>
+        </div>
+    </div>
+
+</section>
+<section class="chart-section fade-in" id="chart-section">
+    <h2 class="section-title centered">มูลค่าเศรษฐกิจของน้ำปลาร้าไทย</h2>
+    <p class="chart-subtitle">การเติบโตของตลาดน้ำปลาร้าพาสเจอร์ไรซ์ในประเทศไทย (พันล้านบาท)</p>
+
+    <p class="chart-subtitle">
+        ในช่วงไม่กี่ปีที่ผ่านมา ตลาดน้ำปลาร้าพาสเจอร์ไรซ์ของไทยเติบโตอย่างก้าวกระโดด โดยมูลค่าตลาดรวมพุ่งแตะประมาณ 10,000
+        ล้านบาทในช่วงปี 2023–2024 สะท้อนให้เห็นถึงความนิยมที่ขยายตัวทั้งในประเทศและต่างประเทศอย่างต่อเนื่อง ในอดีตอุตสาหกรรมน้ำปลาร้า
+        เคยมีขนาดตลาดเพียงระดับพันล้านบาท แต่เมื่อกระแสสุขอนามัยและการรับรองมาตรฐานการผลิตเข้ามามีบทบาท ตลาดก็ขยายตัวไปสู่ระดับ
+        หมื่นล้านบาทตามรายงานจากกรุงเทพธุรกิจ (2023–2024). หนึ่งในตัวอย่างที่ชัดเจนคือแบรนด์ แม่บุญล้ำ ซึ่งมีรายได้ราว 904.94
+        ล้านบาทในปี 2566 ก่อนจะขยับขึ้นไปสู่ระดับเฉียดหรือทะลุ 1,000 ล้านบาทในปีถัดมา แสดงให้เห็นศักยภาพการเติบโตของทั้งแบรนด์
+        และภาพรวมอุตสาหกรรม ว่าไม่ได้เป็นเพียงอาหารพื้นถิ่น แต่กำลังก้าวขึ้นเป็นสินค้าโปรเซสที่มีตลาดใหญ่และโอกาสทางธุรกิจมหาศาล
+    </p>
+
+    <div class="chart-container">
+        <div class="chart-wrapper">
+            <svg class="bar-chart" id="valueChart" viewBox="0 0 800 400">
+                <!-- Y-axis labels -->
+                <text x="40" y="30" class="axis-label">12</text>
+                <text x="40" y="100" class="axis-label">9</text>
+                <text x="40" y="170" class="axis-label">6</text>
+                <text x="40" y="240" class="axis-label">3</text>
+                <text x="40" y="310" class="axis-label">0</text>
+                
+                <!-- Axes -->
+                <line x1="60" y1="20" x2="60" y2="300" class="axis-line" stroke="#999" stroke-width="2"/>
+                <line x1="60" y1="300" x2="760" y2="300" class="axis-line" stroke="#999" stroke-width="2"/>
+                
+                <!-- Grid lines -->
+                <line x1="60" y1="50" x2="760" y2="50" class="grid-line" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="60" y1="120" x2="760" y2="120" class="grid-line" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="60" y1="190" x2="760" y2="190" class="grid-line" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="60" y1="260" x2="760" y2="260" class="grid-line" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+                
+                <!-- Bars -->
+                <g class="bars-container">
+                    <!-- 2018 -->
+                    <rect class="bar year-2018" x="100" y="210" width="60" height="90" rx="6" data-value="2.5" data-label="2018"/>
+                    <text x="130" y="320" class="bar-label">2018</text>
+                    
+                    <!-- 2019 -->
+                    <rect class="bar year-2019" x="180" y="185" width="60" height="115" rx="6" data-value="3.5" data-label="2019"/>
+                    <text x="210" y="320" class="bar-label">2019</text>
+                    
+                    <!-- 2020 -->
+                    <rect class="bar year-2020" x="260" y="150" width="60" height="150" rx="6" data-value="4.8" data-label="2020"/>
+                    <text x="290" y="320" class="bar-label">2020</text>
+                    
+                    <!-- 2021 -->
+                    <rect class="bar year-2021" x="340" y="110" width="60" height="190" rx="6" data-value="6.5" data-label="2021"/>
+                    <text x="370" y="320" class="bar-label">2021</text>
+                    
+                    <!-- 2022 -->
+                    <rect class="bar year-2022" x="420" y="70" width="60" height="230" rx="6" data-value="8.2" data-label="2022"/>
+                    <text x="450" y="320" class="bar-label">2022</text>
+                    
+                    <!-- 2023 -->
+                    <rect class="bar year-2023" x="500" y="40" width="60" height="260" rx="6" data-value="10.0" data-label="2023"/>
+                    <text x="530" y="320" class="bar-label">2023</text>
+                    
+                    <!-- 2024 (projected) -->
+                    <rect class="bar year-2024 projected" x="580" y="30" width="60" height="270" rx="6" data-value="11.2" data-label="2024*"/>
+                    <text x="610" y="320" class="bar-label">2024*</text>
+                </g>
+                
+                <!-- Value labels -->
+                <g class="value-labels">
+                    <text class="bar-value" x="130" y="205">2.5</text>
+                    <text class="bar-value" x="210" y="180">3.5</text>
+                    <text class="bar-value" x="290" y="145">4.8</text>
+                    <text class="bar-value" x="370" y="105">6.5</text>
+                    <text class="bar-value" x="450" y="65">8.2</text>
+                    <text class="bar-value" x="530" y="35">10.0</text>
+                    <text class="bar-value" x="610" y="25">11.2</text>
+                </g>
+                
+                <!-- Note -->
+                <text x="650" y="380" class="chart-note">* ข้อมูลกรุงเทพธุรกิจและ SME Thailand</text>
+            </svg>
+        </div>
         
-        <p class="water-final">
-            และเป็นการถนอมอาหารที่เก่าแก่เกิดจากความจำเป็นของชาวอีสาน<br>
+    </div>
+    
+    <div class="chart-stats">
+        <div class="stat-box">
+            <h4>ตั้งแต่ปี 2018</h4>
+            <p class="stat-value">+348%</p>
+            <p class="stat-label">การเติบโตของตลาด</p>
+        </div>
+        <div class="stat-box">
+            <h4>ปี 2023</h4>
+            <p class="stat-value">10.0 พันล้าน</p>
+            <p class="stat-label">มูลค่าตลาดรวม</p>
+        </div>
+        <div class="stat-box">
+            <h4>อัตราเฉลี่ย</h4>
+            <p class="stat-value">+24.7%</p>
+            <p class="stat-label">ต่อปี (เฉลี่ย 2018–2023)</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Regional Information -->
+    <section class="regional-info fade-in">
+        <h2 class="regional-title">ปลาร้าเป็นวัฒนธรรมการถนอมอาหารที่เก่าแก่</h2>
+        <p class="regional-subtitle">เกิดจากความจำเป็นของชาวอีสานในการเก็บรักษาปลา ฤดูน้ำหลาก</p>
+        <p class="regional-description">
+            เมื่อปลามีมากมาย เป็นการถนอมอาหารที่เก่าแก่เกิดจากความจำเป็นของชาวอีสาน<br>
             ในการเก็บรักษาปลาฤดูน้ำหลาก
         </p>
-    </section>
 
-    <!-- Process Section -->
-    <section class="process-section">
-        <h2 class="process-question">แล้วจะทำยังไง?</h2>
-        <img src="https://placehold.co/515x398" alt="ปลาร้า" class="process-image">
-        
-        <p class="process-intro">"ถึงจะเก็บ <span class="highlight">ปลา</span> ได้นาน</p>
-        <p class="process-description">มา อยากรู้บ่</p>
-        <p class="process-cta">มา สิพาไปเบิ่ง</p>
-    </section>
-
-    <!-- Making Process -->
-    <section class="making-section">
-        <h2 class="making-title">ขั้นตอนการทำ</h2><!--เปลี่ยนสีน้ำตาล-->
-        <h3 class="making-subtitle">ปลาแดก</h3><!--เปลี่ยนสีส้ม-->
-        
-        <div class="process-timeline">
-            <div class="timeline-step">
-                <div class="step-circle"></div>
-                <h4>หาวัตถุดิบปลา</h4>
-            </div>
-            
-            <div class="timeline-step">
-                <div class="step-circle"></div>
-                <h4>กระบวนการคัดแยกปลา</h4>
-            </div>
-            
-            <div class="timeline-step">
-                <div class="step-circle"></div>
-                <h4>คัวปลา (ช่ำระล้าง,ทำความสะอาดปลา)</h4>
-            </div>
-            
-            <div class="timeline-step">
-                <div class="step-circle"></div>
-                <h4>จัดเตรียมวัตถุดิบในการหมักเกลือ ข้าวคั่ว</h4>
-            </div>
-            
-            <div class="timeline-step">
-                <div class="step-circle"></div>
-                <h4>นำวัตถุดิบและปลาที่ผ่านการช่ำระล้างมาคลุกเคล้า</h4>
-            </div>
-            
-            <div class="timeline-step">
-                <div class="step-circle"></div>
-                <h4>นำใส่ภาชนะที่จะบรรจุที่ผ่านการช่ำระล้าง</h4>
-            </div>
-            
-            <div class="timeline-step">
-                <div class="step-circle"></div>
-                <h4>ปิดฝาให้สนิท</h4>
+        <div class="video-container">
+            <div class="video-wrapper">
+                <video controls controlsList="nodownload">
+                    <source src="video/v2.1.mp4" type="video/mp4">
+                    เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                </video>
             </div>
         </div>
+                    <p class="regional-description">
+                อาหารพื้นบ้านเก่าแก่ที่เต็มไปด้วยเสน่ห์…อยากรู้ไหมว่าทำกันยังไง <br>มาดูวิธีทำเลย!
+            </p>
+        
+<!-- ใส่เชิ่ด -->
+  
     </section>
 
+
+    <!-- Making Process -->
+   <section class="making-section fade-in">
+        <img src="images/plaEangLeft.PNG" alt="ปลา" class="hero-float-2">
+        <img src="images/plaEnagRigt.PNG" alt="ปลาเล็ก" class="hero-float-3">
+        <img src="images/fishLeftMainpage.PNG" alt="ปลาเล็ก" class="hero-float-4">
+        <img src="images/fishLeftMainpage.PNG" alt="ปลาเล็ก" class="hero-float-5">
+
+        <h2 class="making-title">ขั้นตอนการทำ</h2>
+        <h3 class="making-subtitle">ปลาร้า</h3>
+        
+        <div class="process-timeline">
+            <div class="timeline-step" data-img="images\makeGideHarr.png" data-caption="แบ่งออกเป็น 2 วิธี ซึ่งแต่เดิมฤดูน้ำหลากในรอบปี ชาวบ้านจะหาปลาริมแม่น้ำชี เพื่อนำมาขายให้กับกลุ่ม แต่ปัจจุบันมีเขื่อนอุบลรัตน์ที่คอยควบคุมปริมาณน้ำ ซึ่งชุมชนไม่สามารถคาดการณ์ได้ว่าน้ำจะมาในฤดูใด จึงจะต้องเปลี่ยนจากการรับซื้อปลา เป็นการหาซื้อปลา จากกระชังเลี้ยง หรือจากร้านขายปลา"> 
+                <div class="step-circle">1</div>
+                <h4>หาวัตถุดิบปลา</h4>
+                <div class="step-hover-image">
+                    <img src="" alt="ขั้นตอน" class="hover-img">
+                    <p class="hover-caption"></p>
+                </div>
+            </div>
+
+            <div class="timeline-step" data-img="images\SelectFish.png" data-caption="การะบวนการคัดแยกปลา โดยแบ่งปลาออกเป็น 2 ขนาด ปลาขนาดใหญ่ จะนำไปขายเป็นปลาสด ส่วนปลาขนาดกลางพอดีรับประทานจะนำมาทำปลาร้า">
+                <div class="step-circle">2</div>
+                <h4>กระบวนการคัดแยกปลา</h4>
+                <div class="step-hover-image">
+                    <img src="" alt="ขั้นตอน" class="hover-img">
+                    <p class="hover-caption"></p>
+                </div>
+            </div>
+
+            <div class="timeline-step" data-img="images\CleanFish.png" data-caption="คัวปลา (ชำระล้าง,ทำความสะอาดปลา) โดยการขูดเกล็ดปลา ตัดครีบ หาง นำเครื่องในออก และล้างทำความสะอาด 2 – 3 น้ำ หรือจนกว่าน้ำที่ล้างออกจะเป็นน้ำใส  ">
+                <div class="step-circle">3</div>
+                <h4>คัวปลา (ชำระล้าง,ทำความสะอาดปลา)</h4>
+                <div class="step-hover-image">
+                    <img src="" alt="ขั้นตอน" class="hover-img">
+                    <p class="hover-caption"></p>
+                </div>
+            </div>
+
+            <div class="timeline-step" data-img="images\Preandsalt.png" data-caption="จัดเตรียมวัตถุดิบในการหมัก ประกอบด้วย เกลือและรำข้าว ซึ่งเป็นวัตถุดิบหลักในการหมัก เกลือช่วยเพิ่มรสชาติของปลาร้า และรำข้าวช่วยชูกลิ่นหอมของปลาร้า ">
+                <div class="step-circle">4</div>
+                <h4>จัดเตรียมวัตถุดิบในการหมักเกลือ ข้าวคั่ว</h4>
+                <div class="step-hover-image">
+                    <img src="" alt="ขั้นตอน" class="hover-img">
+                    <p class="hover-caption"></p>
+                </div>
+            </div>
+
+            <div class="timeline-step" data-img="images\MixFish.png" data-caption="นำวัตถุดิบและปลาที่ผ่านการชำระล้างมาคลุกเคล้าให้เข้ากัน โดยนำเกลือทะเลและเกลือไอโอดีนผสมกันก่อนนำมาคลุกกับปลา จากนั้นนำรำมาคลุกเคล้าเป็นลำดับสุดท้าย (เกลือ 2 กิโลกรัม / ปลา 2 กิโลกรัม / รำ 1 กิโลกรัม)">
+                <div class="step-circle">5</div>
+                <h4>นำวัตถุดิบและปลาที่ผ่านการชำระล้างมาคลุกเคล้า</h4>
+                <div class="step-hover-image">
+                    <img src="" alt="ขั้นตอน" class="hover-img">
+                    <p class="hover-caption"></p>
+                </div>
+            </div>
+
+            <div class="timeline-step" data-img="images\abproveSaiHai.png" data-caption="นำภาชนะที่จะบรรจุที่ผ่านการชำระล้าง และตากแห้งแล้ว มาบรรจุปลาร้า เช่น  ไห หรือโอ่ง ตามความต้องการ เหตุผลที่ควรใช้ “ไห” มากกว่าภาชนะพลาสติก เนื่องจากพลาสติกไม่มีความทนทาน หากหมักนานจะมีกลิ่นพลาสติก (ไมโครพลาสติก) ซึ่งจะไปทำลายรสชาติความหอมของปลาร้า ">
+                <div class="step-circle">6</div>
+                <h4>นำใส่ภาชนะที่จะบรรจุที่ผ่านการชำระล้าง</h4>
+                <div class="step-hover-image">
+                    <img src="" alt="ขั้นตอน" class="hover-img">
+                    <p class="hover-caption"></p>
+                </div>
+            </div>
+
+            <div class="timeline-step" data-img="images\CloseHai.png" data-caption="ปิดฝาให้สนิท หลังจากนั้นนับไปอีก 6 เดือน ปลาร้าจะพร้อมสำหรับรับประทาน">
+                <div class="step-circle">7</div>
+                <h4>ปิดฝาให้สนิท</h4>
+                <div class="step-hover-image">
+                    <img src="" alt="ขั้นตอน" class="hover-img">
+                    <p class="hover-caption"></p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
     <!-- Menu Section -->
-    <section class="menu-section">
+    <section class="menu-section fade-in" id="menu">
         <h2 class="menu-title">เมนู ปลาร้า</h2>
         
         <p class="menu-intro">
-            คุณรู้จัก        <br><br>
-            อาหารที่มีเป็นส่วนผสมไหม
+            คุณรู้จักอาหารที่มีปลาร้าเป็นส่วนผสมไหม
         </p>
         
         <p class="menu-note">
@@ -232,73 +406,150 @@
         
         <div class="menu-grid">
             <div class="menu-item">
-                <img src="https://placehold.co/354x199" alt="ส้มตำปูปลาร้า">
+                <img src="images\somTam.png" alt="ส้มตำปูปลาร้า">
                 <h4>ส้มตำปูปลาร้า</h4>
             </div>
             
             <div class="menu-item">
-                <img src="https://placehold.co/354x199" alt="แจ่วบอง">
+                <img src="images\Jaewbong.png" alt="แจ่วบอง">
                 <h4>แจ่วบอง</h4>
             </div>
         </div>
+        <!-- ใส่เชิ่ด -->
     </section>
 
     <!-- Dish Types -->
-    <section class="dish-types">
-        <h2 class="dish-title">คุณค่าทางโภชนาการ ของ <span class="highlight">ปลาร้า</span></h2><!--ขีดเส้นใต้-->
+    <section class="dish-types fade-in">
+        <h2 class="dish-title">คุณค่าทางโภชนาการ ของ <span class="highlight">ปลาร้า</span></h2>
         
         <p class="dish-quote">
             "อย่าเพิ่งเบื่อหน้าหนี ! <br>
             <span class="highlight">ปลาร้า</span> นี่แหละ ของดีที่มีเมนูเด็ดซ่อนอยู่เพียบ"
         </p>
         
-        <div class="dish-grid">
-            <div class="dish-card">
-                <img src="https://placehold.co/276x170" alt="ลาบเทา">
-                <h4>ลาบเทา</h4>
-            </div>
-            
-            <div class="dish-card">
-                <img src="https://placehold.co/289x162" alt="แกงเปรอะ">
-                <h4>แกงเปรอะ</h4>
-            </div>
-            
-            <div class="dish-card">
-                <img src="https://placehold.co/288x162" alt="แกงหวาย">
-                <h4>แกงหวาย</h4>
-            </div>
-            
-            <div class="dish-card">
-                <img src="https://placehold.co/289x162" alt="หลนปลาร้า">
-                <h4>หลนปลาร้า</h4>
-            </div>
-            
-            <div class="dish-card">
-                <img src="https://placehold.co/289x162" alt="ปลาร้าทอด">
-                <h4>ปลาร้าทอด</h4>
+        <div class="dish-scroll-container" id="dishScrollContainer">
+            <div class="dish-grid" id="dishGrid">
+                <div class="dish-card">
+                    <img src="images\labTao.png" alt="ลาบเทา">
+                    <h4>ลาบเทา</h4>
+                </div>
+                
+                <div class="dish-card">
+                    <img src="images\kangPrer.png" alt="แกงเปรอะ">
+                    <h4>แกงเปรอะ</h4>
+                </div>
+                
+                <div class="dish-card">
+                    <img src="images\KangWali.png" alt="แกงหวาย">
+                    <h4>แกงหวาย</h4>
+                </div>
+                
+                <div class="dish-card">
+                    <img src="images\LoonPlara.png" alt="หลนปลาร้า">
+                    <h4>หลนปลาร้า</h4>
+                </div>
+                
+                <div class="dish-card">
+                    <img src="images\plaraCooked.png" alt="ปลาร้าทอด">
+                    <h4>ปลาร้าทอด</h4>
+                </div>
             </div>
         </div>
+          <p class="nutrition-intro centered">นอกจากปลาร้าจะรังสรรค์ได้หลากหลายเมนู <br>ยังอัดแน่นด้วยคุณค่าทางโภชนาการที่หลายคนคาดไม่ถึง</p>
+        <!-- ใส่เชิ่ด -->
+
+    </section>
+
+    <!-- Nutrition Information Section -->
+    <section class="nutrition-section fade-in">
+        <h2 class="section-title centered">คุณค่าทางโภชนาการของปลาร้า</h2>
+        <p class="nutrition-subtitle">ต่อ 100 กรัม - เอาเมาส์เข้าไปดู</p>
+        
+        <div class="nutrition-container">
+            <div class="fish-nutrition-circle" id="fishNutrition">
+                <svg class="fish-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Fish body -->
+                    <ellipse cx="100" cy="100" rx="70" ry="60" class="fish-body" fill="#FF6B6B"/>
+                    
+                    <!-- Fish head -->
+                    <circle cx="60" cy="100" r="35" class="fish-head" fill="#FF8787"/>
+                    
+                    <!-- Fish eye -->
+                    <circle cx="48" cy="90" r="8" class="fish-eye" fill="white"/>
+                    <circle cx="50" cy="88" r="4" class="fish-pupil" fill="black"/>
+                    
+                    <!-- Fish mouth -->
+                    <path d="M 50 105 Q 45 110 50 115" stroke="white" stroke-width="2" fill="none"/>
+                    
+                    <!-- Fish fin top -->
+                    <path d="M 100 40 L 110 15 L 105 50 Z" class="fish-fin" fill="#FFB3B3"/>
+                    
+                    <!-- Fish fin bottom -->
+                    <path d="M 100 160 L 110 185 L 105 150 Z" class="fish-fin" fill="#FFB3B3"/>
+                    
+                    <!-- Fish tail -->
+                    <path d="M 160 80 L 200 60 L 190 100 L 200 140 L 160 120 Z" class="fish-tail" fill="#FF5252"/>
+                </svg>
+                
+                <div class="nutrition-info hidden" id="nutritionInfo">
+                    <div class="nutrition-item">
+                        <span class="nutrition-label">โปรตีน</span>
+                        <span class="nutrition-value">18 g</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-label">ไขมัน</span>
+                        <span class="nutrition-value">8 g</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-label">คาร์โบไฮเดรต</span>
+                        <span class="nutrition-value">0 g</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-label">แคลอรี่</span>
+                        <span class="nutrition-value">154 kcal</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-label">โซเดียม</span>
+                        <span class="nutrition-value">892 mg</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-label">ธาตุเหล็ก</span>
+                        <span class="nutrition-value">450 mg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nutrition-benefits">
+            <h3>ประโยชน์ของปลาร้า</h3>
+            <ul class="benefits-list">
+                <li> โปรตีนสูง - ช่วยสร้างและซ่อมแซมกล้ามเนื้อ</li>
+                <li> แคลเซียมและฟอสฟอรัส - เสริมสร้างกระดูก</li>
+                <li> โอเมก้า 3 - ดีต่อสุขภาพหัวใจและสมอง</li>
+                <li> วิตามิน B - ช่วยการเผาผลาญพลังงาน</li>
+                <li> ธาตุเหล็ก - ช่วยขับเลือด</li>
+            </ul>
+        </div>
+        <!-- ใส่เชิ่ด -->
+
     </section>
 
     <!-- Fish Types Section -->
-    <section class="fish-types">
-        <h2 class="section-title">ก้าวข้ามขีดจำกัด <span class="highlight"></span></h2>
+<section class="fish-types fade-in">
+        <h2 class="section-title centered fish-types-title">ก้าวข้ามขีดจำกัด <span class="highlight">ของปลาร้า</span></h2>
         
-        <h3 class="fish-subtitle">มิติใหม่ สู่ ของปลาร้า</h3>
+        <h3 class="fish-subtitle centered">
+            มิติใหม่ สู่ ของปลาร้า
+        </h3>
         
-        <div class="fish-images">
-            <img src="https://placehold.co/533x502" alt="ปลาร้า" class="fish-main">
-            <img src="https://placehold.co/533x511" alt="ปลาร้าโมเดิร์น" class="fish-overlay">
-        </div>
-        
-        <div class="fish-comparison">
-            <div class="fish-card">
-                <img src="https://placehold.co/346x388" alt="ปลาร้าต่อน">
+        <div class="fish-cards-container">
+            <div class="fish-card-item">
+                <img src="images\Plaranewver.png" alt="ปลาร้าต่อน">
                 <h4>ปลาร้าต่อน</h4>
             </div>
             
-            <div class="fish-card">
-                <img src="https://placehold.co/343x388" alt="ปลาร้าผง">
+            <div class="fish-card-item">
+                <img src="images\Plaranewver.png" alt="ปลาร้าผง">
                 <h4>ปลาร้าผง</h4>
             </div>
         </div>
@@ -307,30 +558,76 @@
             ปลาร้ากำลังก้าวสู่โลกอนาคต...<br>
             คุณพร้อมจะเป็นส่วนหนึ่งในการผลักดันภูมิปัญญาไทยนี้แล้วหรือยัง?
         </p>
+</section>
+
+    <!-- Future Section / Game -->
+
+
+    
+
+    <!-- Quiz Game Section -->
+    <section class="quiz-section fade-in" style="margin-top: 50px; padding: 60px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <h2 style="text-align: center; color: white; font-size: 2.5rem; margin-bottom: 20px;">🎯 ทายชื่อเมนูปลาร้า</h2>
+        <p style="text-align: center; color: white; margin-bottom: 30px;">มาดูสิว่าคุณรู้จักเมนูปลาร้าแค่ไหน!</p>
+        
+        <button class="game-button" onclick="openQuizGame()" style="display: block; margin: 0 auto; padding: 15px 40px; font-size: 1.2rem; background: white; color: #667eea; border: none; border-radius: 30px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s;">
+            เริ่มเล่นเกมทาย
+        </button>
     </section>
 
-    <!-- Future Section -->
-    <section class="future-section">
-        <h2 class="future-question">แล้วคุณล่ะ ?</h2>
-        <h3 class="future-title">ปลาร้า</h3>
-        <p class="future-subtitle">อยากปรุง</p>
-        <p class="future-cta">มาเล่นเกมนำกันจ้า!!</p>
-        <p class="future-description">เป็นอาหารหยังน้อจ้าาาาา</p>
-        
-        <div class="future-images">
-            <img src="https://placehold.co/91x120" alt="ปลา 1">
-            <img src="https://placehold.co/182x223" alt="ปลา 2">
-            <img src="https://placehold.co/92x143" alt="ปลา 3">
+    <!-- Quiz Modal -->
+    <div class="game-modal" id="quizModal" style="display: none;">
+        <div class="game-container" style="max-width: 700px;">
+            <span class="close-game" onclick="closeQuizGame()">×</span>
+            
+            <div class="game-header">
+                <h2>🎯 ทายชื่อเมนูปลาร้า</h2>
+                <p id="quizQuestion">คำถาม</p>
+            </div>
+
+            <div class="game-stats" style="margin-bottom: 30px;">
+                <div class="stat-item">
+                    <div class="stat-label">คะแนน</div>
+                    <div class="stat-value" id="quizScore">0</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">ข้อที่</div>
+                    <div class="stat-value" id="quizProgress">1/10</div>
+                </div>
+            </div>
+
+            <div id="quizImage" style="text-align: center; margin-bottom: 30px;">
+                <img src="" alt="เมนู" style="max-width: 100%; height: 250px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            </div>
+
+            <div id="quizChoices" style="display: grid; gap: 15px; margin-bottom: 30px;">
+                <!-- Choices will be inserted here -->
+            </div>
+
+            <div id="quizFeedback" style="display: none; text-align: center; padding: 20px; border-radius: 10px; margin-bottom: 20px; font-size: 1.1rem; font-weight: bold;">
+                <!-- Feedback message -->
+            </div>
+
+            <button id="quizNextBtn" onclick="nextQuizQuestion()" style="display: none; margin: 0 auto; padding: 12px 30px; background: #667eea; color: white; border: none; border-radius: 25px; cursor: pointer; font-size: 1rem; font-weight: bold;">
+                ข้อต่อไป →
+            </button>
+
+            <div class="game-result" id="quizResult" style="display: none;">
+                <h3>🎉 เสร็จสิ้น! 🎉</h3>
+                <p>คะแนนรวม: <span id="quizFinalScore"></span>/100</p>
+                <p id="quizRemark" style="font-size: 1.2rem; color: #667eea; margin: 20px 0;"></p>
+                <button class="restart-btn" onclick="restartQuizGame()" style="padding: 12px 30px; background: #667eea; color: white; border: none; border-radius: 25px; cursor: pointer; font-size: 1rem; font-weight: bold;">
+                    เล่นอีกครั้ง
+                </button>
+            </div>
         </div>
-        
-        <div class="game-button">
-            <p>ค่อยคิดเกม</p>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="main-footer">
-        <p>&copy; 2024 บ้านนอกแกลม - ปลาร้าไทยออริจินัล</p>
+        <p>&copy;จัดทำโดยนิสิตสาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยมหาสารคาม</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
